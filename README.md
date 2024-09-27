@@ -9,6 +9,7 @@ You should download the origin MolT5 model before fine-tuning it at [here](https
 cd run_translation 
 
 python run_translation.py --Fine-tune.txt
+# The checkpoint of MolT5 should be saved in the model directory.
 ```
 
 ## Reference  
