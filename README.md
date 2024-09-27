@@ -9,7 +9,7 @@ You should download the origin MolT5 model before fine-tuning it at [here](https
 cd run_translation 
 
 python run_translation.py --Fine-tune.txt
-
+```
 
 ## Reference  
 FusionRetro: https://github.com/SongtaoLiu0823/FusionRetro  
