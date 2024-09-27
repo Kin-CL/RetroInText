@@ -20,7 +20,7 @@ def cano_smiles(smiles):
 
 
 canolize_dataset = {}
-file_name = "C:\\Multi-step\\fusion\\test_dataset.json"
+file_name = "test_dataset.json"
 with open(file_name, 'r') as f:
     dataset = json.load(f)
     for final_product_smiles, reaction_trees in tqdm(dataset.items()):
@@ -54,5 +54,5 @@ with open(file_name, 'r') as f:
         canolize_dataset[final_product_smiles]['retro_routes'] = retro_routes
         canolize_dataset[final_product_smiles]['materials'] = final_retro_tree['materials']
 
-with open('C:\\Multi-step\\test_dataset_canolize.json', 'w') as f:
+with open('test_dataset_canolize.json', 'w') as f:
     f.write(json.dumps(canolize_dataset, indent=4))
