@@ -11,14 +11,17 @@ cd run_translation
 # The checkpoint of MolT5 should be saved in the model directory.
 python run_translation.py --Fine-tune.txt
 ```
-## Inference
-You should download the Scibert model before testing at [here](https://github.com/allenai/scibert), and put it in the model directory.
+## Model Training
+You should download the Scibert model before testing at [here](https://github.com/allenai/scibert), and choose the first one in PyTorch HuggingFace Models, then put it in the model directory.
 
 ```bash
 cd RetroT
 
-# The checkpoint of MolT5 should be saved in the model directory.
-python run_translation.py --Fine-tune.txt
+# Retro Star Zero
+python retro_star_0.py
+
+# Retro Star
+
 ```
 
 ## Reference  
