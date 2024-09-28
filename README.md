@@ -17,10 +17,13 @@ You should download the Scibert model before testing at [here](https://github.co
 ```bash
 cd RetroT
 
-# Retro Star Zero
-python retro_star_0.py
+# Data process
 
-# Retro Star
+# Get intermediates molecule name
+python to_canilize.py --dataset train
+python to_canolize.py --dataset test
+python data_process_name.py
+# Get text information for 
 
 ```
 
