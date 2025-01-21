@@ -14,8 +14,8 @@ DisableLog('rdApp.warning')
 
 
 def get_beam(products, beam_size):
-    tokenizer = AutoTokenizer.from_pretrained("base_new\checkpoint-695000", use_fast=False)
-    model = T5ForConditionalGeneration.from_pretrained("base_new\checkpoint-695000")
+    tokenizer = AutoTokenizer.from_pretrained("model\MolT5", use_fast=False)
+    model = T5ForConditionalGeneration.from_pretrained("model\MolT5")
     ins = "Please predict the reactant of the product:\n"
     final_beams = []
     inputs = tokenizer(ins + products[-1], return_tensors='pt')
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     reaction_to_input = {}
-    file_name = "C:\\Multi-step\\train_canolize_dataset.json"
+    file_name = "train_canolize_dataset.json"
     with open(file_name, 'r') as f:
         dataset = json.load(f)
         for _, reaction_tree in dataset.items():
