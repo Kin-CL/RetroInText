@@ -373,7 +373,7 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size', type=int, default=64)
     parser.add_argument('--lr', type=float, default=1e-3)
     parser.add_argument('--dropout', type=float, default=0.1)
-    parser.add_argument('--pretrain_checkpoint', type=str, default='value_function_fusion-model.pkl')
+    # parser.add_argument('--pretrain_checkpoint', type=str, default='value_function_fusion-model.pkl')
 
 
     args = parser.parse_args()
