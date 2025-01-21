@@ -7,7 +7,6 @@ import numpy as np
 import pandas as pd
 from copy import deepcopy
 from tqdm import tqdm
-from preprocess import get_vocab_size, get_char_to_ix, get_ix_to_char
 from rdkit import Chem
 from rdkit.rdBase import DisableLog
 from transformers import AutoModel,AutoTokenizer,T5ForConditionalGeneration
@@ -30,8 +29,8 @@ def cano_smiles(smiles):
 
 
 def get_beam(products, beam_size):
-    tokenizer = AutoTokenizer.from_pretrained("C:\\Multi-step\\base_new\\checkpoint-695000", use_fast=False)
-    model = T5ForConditionalGeneration.from_pretrained("C:\\Multi-step\\base_new\\checkpoint-695000")
+    tokenizer = AutoTokenizer.from_pretrained("model/MolT5", use_fast=False)
+    model = T5ForConditionalGeneration.from_pretrained("model/MolT5")
     ins = "Please predict the reactant of the product:\n"
     final_beams = []
     inputs = tokenizer(ins + products[-1], return_tensors='pt')
@@ -190,9 +189,6 @@ if __name__ == "__main__":
     
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    char_to_ix = get_char_to_ix()
-    ix_to_char = get_ix_to_char()
-    vocab_size = get_vocab_size()
 
     stock = pd.read_hdf('zinc_stock_17_04_20.hdf5', key="table")  
     stockinchikey_list = stock.inchi_key.values
