@@ -11,10 +11,10 @@ cd run_translation
 # The checkpoint of MolT5 should be saved in the model directory.
 python run_translation.py --Fine-tune.txt
 ```
-You also can download the MolT5 model [here](https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa)
+You also can download the MolT5 model we used [here](https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa).
 
 ## Model Training
-You should download the Scibert model before testing at [here](https://github.com/allenai/scibert), and choose the first one in PyTorch HuggingFace Models, then put it in the model directory. Download the train_dataset
+You should download the Scibert model before testing at [here](https://github.com/allenai/scibert), and choose the first one in PyTorch HuggingFace Models, then put it in the model directory. Download the train_dataset [here](https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa).
 
 ```bash
 # Data process
