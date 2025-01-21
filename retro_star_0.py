@@ -1,9 +1,7 @@
 import random
 import json
-import logging
 import pandas as pd
 import torch
-from rdkit.Chem import AllChem
 from copy import deepcopy
 from tqdm import trange
 from rdkit import Chem
@@ -11,7 +9,6 @@ from rdkit.rdBase import DisableLog
 import argparse
 import os
 import numpy as np
-from model.Molecule_representation.datasets.bace_geomol_feat import featurize_mol_from_smiles
 from icecream import install
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 
