@@ -75,21 +75,15 @@ model = ValueMLP(
 )
 
 all_representation = torch.load("representations.pt").to(device)
-# all_representation = all_representation[46443:]
 all_costs = torch.load("costs.pt").to(device)
-# all_costs = all_costs[46443:]
 index = list(range(all_representation.shape[0]))
 random.shuffle(index)
 
 train_representation = all_representation[index[0:int(0.9 * len(index))]]
-# train_representation = train_representation[:1000]
 val_representation = all_representation[index[int(0.9 * len(index)):]]
-# val_representation = val_representation[:100]
 
 train_costs = all_costs[index[0:int(0.9 * len(index))]]
-# train_costs = train_costs[:1000]
 val_costs = all_costs[index[int(0.9 * len(index)):]]
-# val_costs = val_costs[:100]
 
 train_data = TensorDataset(train_representation, train_costs)
 train_sampler = RandomSampler(train_data)
