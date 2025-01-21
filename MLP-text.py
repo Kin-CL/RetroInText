@@ -99,7 +99,6 @@ val_data = TensorDataset(val_representation, val_costs)
 val_sampler = RandomSampler(val_data)
 val_dataloader = DataLoader(val_data, sampler=val_sampler, batch_size=args.batch_size)
 
-# model.load_state_dict(torch.load("C:\\Multi-step\\RetroT\\value_function_part_16fuse.pkl"))
 model = model.to(device)
 optimizer = optim.Adam(model.parameters(), lr=args.lr)
 best_val_loss = np.inf
