@@ -249,7 +249,6 @@ def cano_smiles(smiles):
 
 def load_dataset(split):
     file_name = "%s_dataset.json" % split
-    file_name = os.path.expanduser(file_name)
     text_file_name = "text_dataset.json"
     dataset = []  # (product_smiles, materials_smiles, depth)
     with open(file_name, 'r') as f:
@@ -273,7 +272,6 @@ def load_dataset(split):
                 "targets": materials_list,
                 "depth": reaction_trees['depth'],
                 "text": text,
-                "intermediates":intermediates
             })
 
     return dataset
