@@ -486,15 +486,6 @@ if __name__ == "__main__":
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # device = torch.device("cpu")
-    value_model_mlp = ValueMLP(
-        n_layers=args.n_layers,
-        fp_dim=args.mlp_dim,
-        latent_dim=args.latent_dim,
-        dropout_rate=args.dropout
-    ).to(device)
-    value_model_mlp.load_state_dict(
-        torch.load("value_function_mlp.pkl", map_location=device))
-    value_model_mlp.eval()
 
     fusion_model = FusionModel(600, 768, 600, args.n_layers, args.latent_dim, args.dropout)
     fusion_model.load_state_dict(torch.load(args.pretrain_checkpoint))
