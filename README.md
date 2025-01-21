@@ -14,7 +14,7 @@ python run_translation.py --Fine-tune.txt
 You also can download the MolT5 model we used [here](https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa).
 
 ## Model Training
-You should download the Scibert model before testing at [here](https://github.com/allenai/scibert), and choose the first one in PyTorch HuggingFace Models, then put it in the model directory. Download the train_dataset [here](https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa).
+You should download the Scibert model before testing at [here](https://github.com/allenai/scibert), and choose the first one in PyTorch HuggingFace Models, then put it in the model directory. Download the train_dataset and the zinc_stock_17_04_20 file [here](https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa).
 
 ```bash
 # Data process
@@ -32,6 +32,13 @@ python fusion_data.py
 python MLP-text.py
 #We also provide value_function_mlp.pkl, you can skip the above commands
 python retro_star_molt5-mlp.py
+
+# Retro Star Search w/o text in test phase
+python get_reaction_cost.py
+python get_cost.py
+python Fusion_model.py
+#We also provide value_function_fusion-model.pkl, you can skip the above commands
+python retro_star_molt5.py
 ```
 
 ## Reference  
