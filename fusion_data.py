@@ -286,7 +286,7 @@ final_re = []
 final_cost = []
 
 fusion_model = FusionModel(600, 768, 600, args.n_layers, args.latent_dim, args.dropout).to(device)
-fusion_model.load_state_dict(torch.load('C:\\Multi-step\\fusion\\best_fusion_model-molt5cost.pkl'))
+# fusion_model.load_state_dict(torch.load('value_function_fusion-model.pkl'))
 
 for item in tqdm(dataset):
     representation = fusion_model.attention_fusion(represent(item['product']),text_embedding(item['text']))
