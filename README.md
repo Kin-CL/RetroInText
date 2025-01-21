@@ -21,8 +21,17 @@ You should download the Scibert model before testing at [here](https://github.co
 
 python to_canilize.py --dataset train
 python to_canolize.py --dataset test
-#  
 
+# Retro Star Zero Search
+python retro_star_0.py  --beam_size 5
+
+# Retro Star Search w/o text in test phase
+python get_reaction_cost.py
+python get_cost.py
+python fusion_data.py
+python MLP-text.py
+#We also provide value_function_mlp.pkl, you can skip the above commands
+python retro_star_molt5-mlp.py
 ```
 
 ## Reference  
