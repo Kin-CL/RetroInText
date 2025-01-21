@@ -2,6 +2,12 @@
 
 This repository contains an implementation of ["RetroInText: A Multimodal Large Language Model Enhanced Framework for Retrosynthetic Planning via In-Context Representation Learning"](), which is a in-context learning for retrosynthesis plan.
 
+## Requirement
+We provide the environment.yaml, you can create the environment below.
+```bash
+conda env create -f environment.yaml
+```
+
 ## Fine tune MolT5 
 You should download the origin MolT5 model before fine-tuning it at [here](https://huggingface.co/laituan245/molt5-base), then put it at the run_translation folder, and save the checkpoint in the model directory.
 
