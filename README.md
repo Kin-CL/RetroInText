@@ -26,7 +26,7 @@ conda env create -f environment.yaml
 ```
 
 ## Dataset
-We use the RetroBench dataset, you can find them in the data directory. You should download the trainning dataset and zinc_stock_17_04_20 file at the following link: [https://zenodo.org/records/14915184](https://zenodo.org/records/14915184) and put them in the folder ```./data```.
+We use the RetroBench dataset, you can find them in the data directory. You should download the trainning dataset and zinc_stock_17_04_20 file at the following link: [https://zenodo.org/records/14915184](https://zenodo.org/records/14915301) and put them in the folder ```./data```.
 
 ## Data processing
 You can generate the text information for the train and test dataset as follow:
@@ -47,7 +47,7 @@ python get_reaction_cost.py
 # Get the total_cost.
 python get_cost.py
 ```
-We also provide the dataset in the ```./data/fusion-model_traindataset```.
+We also provide the dataset in the following link: [https://zenodo.org/records/14915184](https://zenodo.org/records/14915301).
 
 ## Fine tune MolT5 
 You should download the origin MolT5 model before fine-tuning it at [here](https://huggingface.co/laituan245/molt5-base), then put it at the run_translation folder, and save the checkpoint in the model directory.
