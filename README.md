@@ -85,3 +85,15 @@ FusionRetro: https://github.com/SongtaoLiu0823/FusionRetro
 3DInfomax: https://github.com/HannesStark/3DInfomax  
 MolT5: https://github.com/blender-nlp/MolT5  
 Scibert: https://github.com/allenai/scibert  
+
+## Citation
+'''bash
+@inproceedings{
+kang2025retrointext,
+title={RetroInText: A Multimodal Large Language Model Enhanced Framework for Retrosynthetic Planning via In-Context Representation Learning},
+author={Chenglong Kang and Xiaoyi Liu and Fei Guo},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=J6e4hurEKd}
+}
+'''
