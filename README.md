@@ -5,7 +5,8 @@ Development of robust and effective strategies for retrosynthetic planning requi
 
 ![image](./img/framework.png)
 
-## Requirement
+## Dependencies
+The package depends on the Python==3.7.13:
 We provide the environment.yaml, you can create the environment below.
 ```bash
 conda env create -f environment.yaml
