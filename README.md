@@ -1,4 +1,4 @@
-# RETROT: ADVANCING RETROSYNTHETIC PLANNING THROUGH IN-CONTEXT LEARNING AND LARGE LANGUAGE MODEL INTEGRATION
+# RetroInText
 
 This repository contains an implementation of ["RetroInText: A Multimodal Large Language Model Enhanced Framework for Retrosynthetic Planning via In-Context Representation Learning"](), which is a in-context learning for retrosynthesis plan.
 
