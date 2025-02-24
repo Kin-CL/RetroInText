@@ -61,6 +61,7 @@ python run_translation.py --Fine-tune.txt
 ```
 You also can download the MolT5 model we used in the following link: [https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa](https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa).
 
+### Train fusion model 
 You should download the Scibert model before testing at [https://github.com/allenai/scibert](https://github.com/allenai/scibert), and choose the first one in PyTorch HuggingFace Models, then put it in the model directory.
 
 ```bash
@@ -68,6 +69,9 @@ cd model
 python Fusion_model.py
 ```
 We also provide value_function_fusion-model.pkl, you can skip the above commands.
+
+## Running the Experiment
+To run our model in the RetroBench dataset, followed the setting used in FusionRetro, which set the beam size of 5, random seed of 
 
 ## Reference  
 FusionRetro: https://github.com/SongtaoLiu0823/FusionRetro  
