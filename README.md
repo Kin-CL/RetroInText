@@ -26,7 +26,7 @@ conda env create -f environment.yaml
 ```
 
 ## Dataset
-We use the RetroBench dataset, you can find them in the data directory. You should download the trainning dataset and zinc_stock_17_04_20 file at the following link: [https://zenodo.org/records/14915184](https://zenodo.org/records/14915301) and put them in the folder ```./data```.
+We use the RetroBench dataset, you can find them in the data directory. You should download the trainning dataset and zinc_stock_17_04_20 file at the following link: [https://zenodo.org/records/14915301](https://zenodo.org/records/14915301) and put them in the folder ```./data```.
 
 ## Data processing
 You can generate the text information for the train and test dataset as follow:
@@ -47,7 +47,7 @@ python get_reaction_cost.py
 # Get the total_cost.
 python get_cost.py
 ```
-We also provide the dataset in the following link: [https://zenodo.org/records/14915184](https://zenodo.org/records/14915301).
+We also provide the dataset in the following link: [https://zenodo.org/records/14915301](https://zenodo.org/records/14915301).
 
 ## Model Training
 ### Fine tune MolT5 
@@ -59,7 +59,7 @@ cd run_translation
 # The checkpoint of MolT5 should be saved in the model directory.
 python run_translation.py --Fine-tune.txt
 ```
-You also can download the MolT5 model we used in the following link: [https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa](https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa).
+You also can download the MolT5 model we used in the following link: [https://zenodo.org/records/14915347](https://zenodo.org/records/14915347).
 
 ### Train fusion model 
 You should download the Scibert model before testing at [https://github.com/allenai/scibert](https://github.com/allenai/scibert), and choose the first one in PyTorch HuggingFace Models, then put it in the model directory.
