@@ -85,15 +85,36 @@ FusionRetro: https://github.com/SongtaoLiu0823/FusionRetro
 3DInfomax: https://github.com/HannesStark/3DInfomax  
 MolT5: https://github.com/blender-nlp/MolT5  
 Scibert: https://github.com/allenai/scibert  
-
-## Citation
 ```bash
-@inproceedings{
-kang2025retrointext,
-title={RetroInText: A Multimodal Large Language Model Enhanced Framework for Retrosynthetic Planning via In-Context Representation Learning},
-author={Chenglong Kang and Xiaoyi Liu and Fei Guo},
-booktitle={The Thirteenth International Conference on Learning Representations},
-year={2025},
-url={https://openreview.net/forum?id=J6e4hurEKd}
+@inproceedings{liu2023fusionretro,
+  title={FusionRetro: Molecule Representation Fusion via In-Context Learning for Retrosynthetic Planning},
+  author={Liu, Songtao and Tu, Zhengkai and Xu, Minkai and Zhang, Zuobai and Lin, Lu and Ying, Rex and Tang, Jian and Zhao, Peilin and Wu, Dinghao},
+  booktitle={International Conference on Machine Learning},
+  year={2023}
+}
+
+@inproceedings{stark20223d,
+  title={3d infomax improves gnns for molecular property prediction},
+  author={St{\"a}rk, Hannes and Beaini, Dominique and Corso, Gabriele and Tossou, Prudencio and Dallago, Christian and G{\"u}nnemann, Stephan and Li{\`o}, Pietro},
+  booktitle={International Conference on Machine Learning},
+  pages={20479--20502},
+  year={2022},
+  organization={PMLR}
+}
+
+@inproceedings{edwards2022translation,
+  title={Translation between Molecules and Natural Language},
+  author={Edwards, Carl and Lai, Tuan and Ros, Kevin and Honke, Garrett and Cho, Kyunghyun and Ji, Heng},
+  booktitle={Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing},
+  pages={375--413},
+  year={2022}
+}
+
+@inproceedings{beltagy2019scibert,
+  title={SciBERT: A Pretrained Language Model for Scientific Text},
+  author={Beltagy, Iz and Lo, Kyle and Cohan, Arman},
+  booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  pages={3615--3620},
+  year={2019}
 }
 ```
