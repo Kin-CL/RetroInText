@@ -6,8 +6,20 @@ Development of robust and effective strategies for retrosynthetic planning requi
 ![image](./img/framework.png)
 
 ## Dependencies
-The package depends on the Python==3.7.13:
-We provide the environment.yaml, you can create the environment below.
+The package depends on the Python==3.8.19:
+```bash
+dgl==2.1.0
+einops==0.7.0
+pandas==2.0.3
+torch==2.2.0
+torch-geometric==2.5.2
+torch-scatter==2.1.2
+torch-sparse==0.6.18
+transformers==4.39.3
+scikit-learn==1.3.2
+```
+
+We also provide the environment.yaml, you can create the environment below.
 ```bash
 conda env create -f environment.yaml
 ```
