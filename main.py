@@ -248,8 +248,8 @@ def cano_smiles(smiles):
 
 
 def load_dataset(split):
-    file_name = "%s_dataset.json" % split
-    text_file_name = "text_dataset.json"
+    file_name = "data/%s_dataset.json" % split
+    text_file_name = "data/text_test_dataset.json"
     dataset = []  # (product_smiles, materials_smiles, depth)
     with open(file_name, 'r') as f:
         _dataset = json.load(f)
