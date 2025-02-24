@@ -16,6 +16,7 @@ torch-geometric==2.5.2
 torch-scatter==2.1.2
 torch-sparse==0.6.18
 transformers==4.39.3
+openai==1.30.1
 scikit-learn==1.3.2
 ```
 
@@ -38,7 +39,7 @@ python train_text_generation.py
 # Get the text information for the test_dataset.
 python test_text_generation.py
 ```
-You also provide the text information in the ```./data/text_train_dataset``` and ```./data/text_test_dataset```.
+You also provide the text information in the ```./data/text_train_dataset``` and ```./data/text_test_dataset```. After getting the 
 
 ## Fine tune MolT5 
 You should download the origin MolT5 model before fine-tuning it at [here](https://huggingface.co/laituan245/molt5-base), then put it at the run_translation folder, and save the checkpoint in the model directory.
