@@ -39,7 +39,15 @@ python train_text_generation.py
 # Get the text information for the test_dataset.
 python test_text_generation.py
 ```
-You also provide the text information in the ```./data/text_train_dataset``` and ```./data/text_test_dataset```. After getting the 
+You also provide the text information in the ```./data/text_train_dataset``` and ```./data/text_test_dataset```. After getting the text information for the traindataset, you should get the cost as the following step:
+```bash
+# Get the reaction_cost.
+python get_reaction_cost.py
+
+# Get the total_cost.
+python get_cost.py
+```
+
 
 ## Fine tune MolT5 
 You should download the origin MolT5 model before fine-tuning it at [here](https://huggingface.co/laituan245/molt5-base), then put it at the run_translation folder, and save the checkpoint in the model directory.
