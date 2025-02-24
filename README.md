@@ -30,8 +30,15 @@ We use the RetroBench dataset, you can find them in the data directory. You shou
 ## Data processing
 You can generate the text information for the train and test dataset as follow:
 ```bash
-python 
+cd dataprocess
+
+# Get the text information for the train_dataset.
+python train_text_generation.py
+
+# Get the text information for the test_dataset.
+python test_text_generation.py
 ```
+You also provide the text information in the ```./data/text_train_dataset``` and ```./data/text_test_dataset```.
 
 ## Fine tune MolT5 
 You should download the origin MolT5 model before fine-tuning it at [here](https://huggingface.co/laituan245/molt5-base), then put it at the run_translation folder, and save the checkpoint in the model directory.
