@@ -71,7 +71,7 @@ python Fusion_model.py
 We also provide value_function_fusion-model.pkl, you can skip the above commands.
 
 ## Running the Experiment
-To run our model in the RetroBench dataset, followed the setting used in FusionRetro, which set the beam size of 5, random seed of 42:
+To run our model in the RetroBench dataset, followed the setting used in FusionRetro, which set the beam size as 5, random seed as 42:
 ```bash
 # Get the main result
 python main.py
