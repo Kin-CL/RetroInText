@@ -40,6 +40,5 @@ if __name__ == '__main__':
             "depth": depth,
             "text": text
         })
-    generated_split_file_name = f"test_dataset_with_text.json"
-    with open(generated_split_file_name, "w") as json_w:
+    with open("./data/text_test_dataset", "w") as json_w:
         json_w.write(json.dumps(dataset_with_text))
