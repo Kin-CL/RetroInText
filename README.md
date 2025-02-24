@@ -24,6 +24,9 @@ We also provide the environment.yaml, you can create the environment below.
 conda env create -f environment.yaml
 ```
 
+## Dataset
+We use the RetroBench dataset, you can find them in the data directory. You should download the trainning dataset and zinc_stock_17_04_20 file at the following link: [https://zenodo.org/records/14915184](https://zenodo.org/records/14915184)
+
 ## Fine tune MolT5 
 You should download the origin MolT5 model before fine-tuning it at [here](https://huggingface.co/laituan245/molt5-base), then put it at the run_translation folder, and save the checkpoint in the model directory.
 
