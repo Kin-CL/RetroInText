@@ -80,11 +80,7 @@ python main.py
 python Greedy_DFS.py
 ```
 
-## Reference  
-FusionRetro: https://github.com/SongtaoLiu0823/FusionRetro  
-3DInfomax: https://github.com/HannesStark/3DInfomax  
-MolT5: https://github.com/blender-nlp/MolT5  
-Scibert: https://github.com/allenai/scibert  
+## Reference    
 ```bash
 @inproceedings{liu2023fusionretro,
   title={FusionRetro: Molecule Representation Fusion via In-Context Learning for Retrosynthetic Planning},
