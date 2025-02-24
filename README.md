@@ -49,8 +49,9 @@ python get_cost.py
 ```
 We also provide the dataset in the following link: [https://zenodo.org/records/14915184](https://zenodo.org/records/14915301).
 
-## Fine tune MolT5 
-You should download the origin MolT5 model before fine-tuning it at [here](https://huggingface.co/laituan245/molt5-base), then put it at the run_translation folder, and save the checkpoint in the model directory.
+## Model Training
+# Fine tune MolT5 
+You should download the origin MolT5 model before fine-tuning it at [https://huggingface.co/laituan245/molt5-base](https://huggingface.co/laituan245/molt5-base), then put it at the run_translation folder, and save the checkpoint in the model directory.
 
 ```bash
 cd run_translation
@@ -58,35 +59,15 @@ cd run_translation
 # The checkpoint of MolT5 should be saved in the model directory.
 python run_translation.py --Fine-tune.txt
 ```
-You also can download the MolT5 model we used [here](https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa).
+You also can download the MolT5 model we used in the following link: [https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa](https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa).
 
-## Model Training
-You should download the Scibert model before testing at [here](https://github.com/allenai/scibert), and choose the first one in PyTorch HuggingFace Models, then put it in the model directory. Download the train_dataset and the zinc_stock_17_04_20 file [here](https://drive.google.com/drive/folders/15qYBvDtfoWtVteaxav14VrPCBVQwRWBa).
+You should download the Scibert model before testing at [https://github.com/allenai/scibert](https://github.com/allenai/scibert), and choose the first one in PyTorch HuggingFace Models, then put it in the model directory.
 
 ```bash
-# Data process
-
-python to_canilize.py --dataset train
-python to_canolize.py --dataset test
-
-# Retro Star Zero Search
-python retro_star_0.py  --beam_size 5
-
-# Retro Star Search w/o text in test phase
-python get_reaction_cost.py
-python get_cost.py
-python fusion_data.py
-python MLP-text.py
-#We also provide value_function_mlp.pkl, you can skip the above commands
-python retro_star_molt5-mlp.py
-
-# Retro Star Search w/o text in test phase
-python get_reaction_cost.py
-python get_cost.py
+cd model
 python Fusion_model.py
-#We also provide value_function_fusion-model.pkl, you can skip the above commands
-python retro_star_molt5.py
 ```
+We also provide value_function_fusion-model.pkl, you can skip the above commands.
 
 ## Reference  
 FusionRetro: https://github.com/SongtaoLiu0823/FusionRetro  
