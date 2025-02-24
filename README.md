@@ -47,7 +47,7 @@ python get_reaction_cost.py
 # Get the total_cost.
 python get_cost.py
 ```
-
+We also provide the dataset in the ```./data/fusion-model_traindataset```.
 
 ## Fine tune MolT5 
 You should download the origin MolT5 model before fine-tuning it at [here](https://huggingface.co/laituan245/molt5-base), then put it at the run_translation folder, and save the checkpoint in the model directory.
