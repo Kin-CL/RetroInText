@@ -473,7 +473,7 @@ if __name__ == "__main__":
     parser.add_argument('--seed', type=int, default=42, help='Random seed.')
     parser.add_argument('--beam_size', type=int, default=5,
                         help='Beams size. Default 5. Must be 1 meaning greedy search or greater or equal 5.')
-    parser.add_argument('--pretrain_checkpoint', type=str, default='value_function_fusion-model.pkl')
+    parser.add_argument('--pretrain_checkpoint', type=str, default='model/value_function_fusion-model.pkl')
     parser.add_argument('--dropout', type=float, default=0.1)
 
     args = parser.parse_args()
