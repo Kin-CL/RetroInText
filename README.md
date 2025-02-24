@@ -50,7 +50,7 @@ python get_cost.py
 We also provide the dataset in the following link: [https://zenodo.org/records/14915184](https://zenodo.org/records/14915301).
 
 ## Model Training
-# Fine tune MolT5 
+### Fine tune MolT5 
 You should download the origin MolT5 model before fine-tuning it at [https://huggingface.co/laituan245/molt5-base](https://huggingface.co/laituan245/molt5-base), then put it at the run_translation folder, and save the checkpoint in the model directory.
 
 ```bash
