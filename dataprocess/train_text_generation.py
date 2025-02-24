@@ -45,5 +45,5 @@ if __name__ == '__main__':
                 "depth": depth,
                 "text": text
             })
-        with open(./data/text_train_dataset, "w") as json_w:
+        with open("./data/text_train_dataset", "w") as json_w:
             json_w.write(json.dumps(dataset_with_text))
