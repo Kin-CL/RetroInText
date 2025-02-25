@@ -6,7 +6,7 @@ from torch.distributions import Categorical
 from torch.utils.data import Sampler, RandomSampler, Subset
 from tqdm import tqdm
 
-from Molecule_representation.datasets.qm9_dataset import QM9Dataset
+from model.Molecule_representation.datasets.qm9_dataset import QM9Dataset
 
 
 class ConstantNumberAtomsCategorical(Sampler[List[int]]):
