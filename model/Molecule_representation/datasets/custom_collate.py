@@ -6,7 +6,7 @@ import torch
 import torch_geometric
 from torch.nn.utils.rnn import pad_sequence
 
-from Molecule_representation.commons.utils import get_adj_matrix
+from model.Molecule_representation.commons.utils import get_adj_matrix
 
 
 def graph_collate(batch: List[Tuple]):
