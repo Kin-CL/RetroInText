@@ -6,8 +6,8 @@ import dgl
 import dgl.function as fn
 import numpy as np
 
-from Molecule_representation.commons.mol_encoder import AtomEncoder, BondEncoder
-from Molecule_representation.models.base_layers import MLP
+from model.Molecule_representation.commons.mol_encoder import AtomEncoder, BondEncoder
+from model.Molecule_representation.models.base_layers import MLP
 
 """
     Graph Transformer Layer
