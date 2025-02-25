@@ -1,7 +1,7 @@
 from torch import nn
 import torch
 
-from Molecule_representation.commons.mol_encoder import AtomEncoder
+from model.Molecule_representation.commons.mol_encoder import AtomEncoder
 
 
 class E_GCL(nn.Module):
