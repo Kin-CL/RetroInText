@@ -18,6 +18,7 @@ torch-sparse==0.6.18
 transformers==4.39.3
 openai==1.30.1
 scikit-learn==1.3.2
+sentencepiece==0.2.0
 ```
 
 We also provide the environment.yaml, you can create the environment below.
