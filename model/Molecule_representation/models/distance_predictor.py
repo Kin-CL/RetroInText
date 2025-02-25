@@ -6,8 +6,8 @@ import torch
 from torch import nn
 from torch.nn import TransformerEncoderLayer
 
-from RetroT.model.Molecule_representation.models.base_layers import MLP
-from RetroT.model.Molecule_representation.models.pna import PNAGNN
+from Molecule_representation.models.base_layers import MLP
+from Molecule_representation.models.pna import PNAGNN
 import torch.nn.functional as F
 
 
