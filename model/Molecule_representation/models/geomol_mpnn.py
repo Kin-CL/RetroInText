@@ -6,7 +6,7 @@ from torch.nn import Sequential as Seq, Linear as Lin, ReLU, TransformerEncoderL
 from torch_geometric.nn import global_mean_pool
 from torch_scatter import scatter_sum
 
-from RetroT.model.Molecule_representation.models.base_layers import MLP
+from Molecule_representation.models.base_layers import MLP
 
 
 class GeomolMLP(nn.Module):
