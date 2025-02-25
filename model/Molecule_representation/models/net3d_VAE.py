@@ -6,10 +6,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 import dgl.function as fn
 
-from Molecule_representation.commons.mol_encoder import AtomEncoder
-from Molecule_representation.commons.utils import fourier_encode_dist
-from Molecule_representation.models.base_layers import MLP
-from Molecule_representation.models.net3d import Net3DLayer
+from model.Molecule_representation.commons.mol_encoder import AtomEncoder
+from model.Molecule_representation.commons.utils import fourier_encode_dist
+from model.Molecule_representation.models.base_layers import MLP
+from model.Molecule_representation.models.net3d import Net3DLayer
 
 
 class Net3DAE(nn.Module):
