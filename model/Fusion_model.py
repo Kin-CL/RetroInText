@@ -261,7 +261,7 @@ def get_arguments():
 
     if args.checkpoint:  # overwrite args with args from checkpoint except for the args that were contained in the config file
         arg_dict = args.__dict__
-        with open(os.path.join(os.path.dirname(args.checkpoint), "model/Molecule_representation/runs/PNA_qmugs_NTXentMultiplePositives_620000_123_25-08_09-19-52/train_arguments.yaml"), 'r') as arg_file:
+        with open(os.path.join(os.path.dirname(args.checkpoint), "Molecule_representation/runs/PNA_qmugs_NTXentMultiplePositives_620000_123_25-08_09-19-52/train_arguments.yaml"), 'r') as arg_file:
             checkpoint_dict = yaml.load(arg_file, Loader=yaml.FullLoader)
         for key, value in checkpoint_dict.items():
             if key not in config_dict.keys():
@@ -276,7 +276,7 @@ def get_arguments():
 def parse_arguments():
     p = argparse.ArgumentParser()
 
-    p.add_argument('--config', type=argparse.FileType(mode='r'), default="model/Molecule_representation/runs/PNA_qmugs_NTXentMultiplePositives_620000_123_25-08_09-19-52/12.yml")
+    p.add_argument('--config', type=argparse.FileType(mode='r'), default="Molecule_representation/runs/PNA_qmugs_NTXentMultiplePositives_620000_123_25-08_09-19-52/12.yml")
     p.add_argument('--experiment_name', type=str, help='name that will be added to the runs folder output')
     p.add_argument('--logdir', type=str, default='runs', help='tensorboard logdirectory')
     p.add_argument('--num_epochs', type=int, default=2500, help='number of times to iterate through all samples')
@@ -318,7 +318,7 @@ def parse_arguments():
     p.add_argument('--val_per_batch', type=bool, default=True,
                    help='run evaluation every batch and then average over the eval results. When running the molhiv benchmark for example, this needs to be Fale because we need to evaluate on all val data at once since the metric is rocauc')
     p.add_argument('--tensorboard_functions', default=[], help='choices of the TENSORBOARD_FUNCTIONS in utils')
-    p.add_argument('--checkpoint', type=str, default = "model/Molecule_representation/runs/PNA_qmugs_NTXentMultiplePositives_620000_123_25-08_09-19-52/best_checkpoint_35epochs.pt",help='path to directory that contains a checkpoint to continue training')
+    p.add_argument('--checkpoint', type=str, default = "Molecule_representation/runs/PNA_qmugs_NTXentMultiplePositives_620000_123_25-08_09-19-52/best_checkpoint_35epochs.pt",help='path to directory that contains a checkpoint to continue training')
     p.add_argument('--pretrain_checkpoint', type=str, help='Specify path to finetune from a pretrained checkpoint')
     p.add_argument('--transfer_layers', default=[],
                    help='strings contained in the keys of the weights that are transferred')
@@ -379,12 +379,12 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    tokenizer = AutoTokenizer.from_pretrained('model/scibert')
-    text_model = AutoModel.from_pretrained('model/scibert')
+    tokenizer = AutoTokenizer.from_pretrained('scibert')
+    text_model = AutoModel.from_pretrained('scibert')
     text_model.to(device)
 
     args_value = get_arguments()
-    checkpoint = torch.load("model/Molecule_representation/runs/PNA_qmugs_NTXentMultiplePositives_620000_123_25-08_09-19-52/best_checkpoint_35epochs.pt",
+    checkpoint = torch.load("Molecule_representation/runs/PNA_qmugs_NTXentMultiplePositives_620000_123_25-08_09-19-52/best_checkpoint_35epochs.pt",
         map_location=device)
     value_model = globals()[args_value.model_type](node_dim=74, edge_dim=4,
                                                    **args_value.model_parameters)
