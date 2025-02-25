@@ -62,7 +62,7 @@ python run_translation.py --Fine-tune.txt
 You also can download the MolT5 model we used in the following link: [https://zenodo.org/records/14915347](https://zenodo.org/records/14915347).
 
 ### Train fusion model 
-You should download the Scibert model before testing at the following link: [https://zenodo.org/records/14922390](https://zenodo.org/records/14922390), and put it in the ```./model/scibert```. You also should download the best_checkpoint_35epochs.pt at the following link: [https://zenodo.org/records/14923575](https://zenodo.org/records/14923575) and put it in ```./model/Molecule_representation/runs/```
+You should download the Scibert model before testing at the following link: [https://zenodo.org/records/14922390](https://zenodo.org/records/14922390), and put it in  ```./model/scibert```. You also should download the best_checkpoint_35epochs.pt at the following link: [https://zenodo.org/records/14923575](https://zenodo.org/records/14923575) and put it in ```./model/Molecule_representation/runs/PNA_qmugs_NTXentMultiplePositives_620000_123_25-08_09-19-52```.
 
 ```bash
 cd model
