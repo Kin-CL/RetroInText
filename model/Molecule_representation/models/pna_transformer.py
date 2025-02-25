@@ -8,10 +8,10 @@ from torch import nn
 import torch.nn.functional as F
 from torch.nn import TransformerEncoderLayer
 
-from RetroT.model.Molecule_representation.commons.mol_encoder import AtomEncoder, BondEncoder
-from RetroT.model.Molecule_representation.models.base_layers import MLP
-from RetroT.model.Molecule_representation.models.pna import PNALayer
-from RetroT.model.Molecule_representation.models.pna_original import PNASimpleLayer
+from Molecule_representation.commons.mol_encoder import AtomEncoder, BondEncoder
+from Molecule_representation.models.base_layers import MLP
+from Molecule_representation.models.pna import PNALayer
+from Molecule_representation.models.pna_original import PNASimpleLayer
 
 EPS = 1e-5
 
