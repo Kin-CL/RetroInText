@@ -62,7 +62,7 @@ python run_translation.py --Fine-tune.txt
 You also can download the MolT5 model we used in the following link: [https://zenodo.org/records/14915347](https://zenodo.org/records/14915347).
 
 ### Train fusion model 
-You should download the Scibert model before testing at [https://github.com/allenai/scibert](https://github.com/allenai/scibert), and choose the first one in PyTorch HuggingFace Models, then put it in the model directory.
+You should download the Scibert model before testing at [https://github.com/allenai/scibert](https://github.com/allenai/scibert), and put it in the ```./model/scibert```.
 
 ```bash
 cd model
