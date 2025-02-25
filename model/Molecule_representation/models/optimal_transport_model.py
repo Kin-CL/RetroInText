@@ -11,16 +11,16 @@ from itertools import permutations
 import numpy as np
 import ot
 
-from Molecule_representation.models.base_layers import MLP
-from Molecule_representation.models.geomol_mpnn_ogb_feat_random_non_shared import GeomolGNNOGBFeatRandomNonShared
-from Molecule_representation.models.gin_random import GNN_node_VirtualnodeRandom
-from Molecule_representation.models.pna_gnn_random import PNAGNNRandom
-from Molecule_representation.models.geomol_mpnn import GeomolGNN, GeomolMLP
-from Molecule_representation.models.geomol_mpnn_ogb_feat import GeomolGNNOGBFeat
-from Molecule_representation.models.geomol_mpnn_ogb_feat_random import GeomolGNNOGBFeatRandom
-from Molecule_representation.models.pna_original_random import PNAGNNSimpleRandom
-from Molecule_representation.models.gin_random import GNN_nodeRandom
-from Molecule_representation.models.pna_edge_update_random import PNAGNNRandomEdgeUpdate
+from model.Molecule_representation.models.base_layers import MLP
+from model.Molecule_representation.models.geomol_mpnn_ogb_feat_random_non_shared import GeomolGNNOGBFeatRandomNonShared
+from model.Molecule_representation.models.gin_random import GNN_node_VirtualnodeRandom
+from model.Molecule_representation.models.pna_gnn_random import PNAGNNRandom
+from model.Molecule_representation.models.geomol_mpnn import GeomolGNN, GeomolMLP
+from model.Molecule_representation.models.geomol_mpnn_ogb_feat import GeomolGNNOGBFeat
+from model.Molecule_representation.models.geomol_mpnn_ogb_feat_random import GeomolGNNOGBFeatRandom
+from model.Molecule_representation.models.pna_original_random import PNAGNNSimpleRandom
+from model.Molecule_representation.models.gin_random import GNN_nodeRandom
+from model.Molecule_representation.models.pna_edge_update_random import PNAGNNRandomEdgeUpdate
 
 
 
