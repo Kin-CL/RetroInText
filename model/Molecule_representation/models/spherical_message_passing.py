@@ -8,8 +8,8 @@ from torch_scatter import scatter
 
 import sys
 
-from RetroT.model.Molecule_representation.commons.mol_encoder import AtomEncoder
-from RetroT.model.Molecule_representation.commons.spherical_encoding import dist_emb, angle_emb, torsion_emb, xyztodat
+from Molecule_representation.commons.mol_encoder import AtomEncoder
+from Molecule_representation.commons.spherical_encoding import dist_emb, angle_emb, torsion_emb, xyztodat
 
 sys.path.append('../../..')
 
