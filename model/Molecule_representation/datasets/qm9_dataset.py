@@ -14,7 +14,7 @@ from tqdm import tqdm
 import torch.nn.functional as F
 from scipy.constants import physical_constants
 
-from Molecule_representation.commons.spherical_encoding import dist_emb
+from model.Molecule_representation.commons.spherical_encoding import dist_emb
 
 hartree2eV = physical_constants['hartree-electron volt relationship'][0]
 
