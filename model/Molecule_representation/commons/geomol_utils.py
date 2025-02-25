@@ -3,7 +3,7 @@ import torch_geometric as tg
 from torch_geometric.utils import degree
 import networkx as nx
 
-from Molecule_representation.commons.cycle_utils import get_current_cycle_indices
+from model.Molecule_representation.commons.cycle_utils import get_current_cycle_indices
 
 angle_mask_ref = torch.LongTensor([[0, 0, 0, 0, 0, 0],
                                    [0, 0, 0, 0, 0, 0],
