@@ -17,9 +17,9 @@ import logging
 import torch.optim as optim
 from tqdm import tqdm
 import numpy as np
-from model.Molecule_representation.commons.losses import *
-from model.Molecule_representation.models import *
-from model.Molecule_representation.datasets.samplers import *
+from Molecule_representation.commons.losses import *
+from Molecule_representation.models import *
+from Molecule_representation.datasets.samplers import *
 
 bonds = {BT.SINGLE: 0, BT.DOUBLE: 1, BT.TRIPLE: 2, BT.AROMATIC: 3}
 types = {'H': 0, 'Li': 1, 'B': 2, 'C': 3, 'N': 4, 'O': 5, 'F': 6, 'Na': 7, 'Mg': 8, 'Al': 9, 'Si': 10,
