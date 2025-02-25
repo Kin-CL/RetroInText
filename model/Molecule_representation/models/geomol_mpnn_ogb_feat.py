@@ -6,9 +6,9 @@ from torch.nn import Sequential as Seq, Linear as Lin, ReLU, TransformerEncoderL
 from torch_geometric.nn import global_mean_pool
 from torch_scatter import scatter_sum
 
-from RetroT.model.Molecule_representation.commons.mol_encoder import BondEncoder, AtomEncoder
-from RetroT.model.Molecule_representation.models.base_layers import MLP
-from RetroT.model.Molecule_representation.models.geomol_mpnn import GeomolMLP, GeomolMetaLayer, EdgeModel, GeomolNodeModel
+from Molecule_representation.commons.mol_encoder import BondEncoder, AtomEncoder
+from Molecule_representation.models.base_layers import MLP
+from Molecule_representation.models.geomol_mpnn import GeomolMLP, GeomolMetaLayer, EdgeModel, GeomolNodeModel
 
 
 class GeomolGNNOGBFeat(nn.Module):
