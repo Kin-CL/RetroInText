@@ -8,9 +8,9 @@ from functools import partial
 from torch import nn
 import torch.nn.functional as F
 
-from Molecule_representation.commons.mol_encoder import AtomEncoder, BondEncoder
-from Molecule_representation.models.base_layers import MLP
-from Molecule_representation.models.pna import PNAGNN
+from model.Molecule_representation.commons.mol_encoder import AtomEncoder, BondEncoder
+from model.Molecule_representation.models.base_layers import MLP
+from model.Molecule_representation.models.pna import PNAGNN
 
 
 class PNADistancePredictor(nn.Module):
