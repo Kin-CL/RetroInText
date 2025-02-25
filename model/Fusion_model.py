@@ -390,7 +390,7 @@ if __name__ == '__main__':
                                                    **args_value.model_parameters)
     value_model.load_state_dict(checkpoint['model_state_dict'])
 
-    file_name = "data/training_fusion-model.json"
+    file_name = "data/fusion-model_traindataset.json"
     dataset = MyDataset(file_name, tokenizer, text_model, value_model, device)
     dataloader = DataLoader(dataset, batch_size=args.batch_size, shuffle=True)
 
