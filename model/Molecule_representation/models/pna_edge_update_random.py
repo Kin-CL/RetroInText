@@ -5,10 +5,10 @@ import torch
 
 from torch import nn
 
-from Molecule_representation.commons.mol_encoder import AtomEncoder, BondEncoder
-from Molecule_representation.models.base_layers import MLP
-from Molecule_representation.models.geomol_mpnn import GeomolMLP
-from Molecule_representation.models.pna import PNA_AGGREGATORS, PNA_SCALERS
+from model.Molecule_representation.commons.mol_encoder import AtomEncoder, BondEncoder
+from model.Molecule_representation.models.base_layers import MLP
+from model.Molecule_representation.models.geomol_mpnn import GeomolMLP
+from model.Molecule_representation.models.pna import PNA_AGGREGATORS, PNA_SCALERS
 import torch.nn.functional as F
 
 
