@@ -4,12 +4,12 @@ import torch.nn as nn
 import torch.nn.functional as F
 import dgl.function as fn
 
-from RetroT.model.Molecule_representation.commons.mol_encoder import AtomEncoder, BondEncoder
-from RetroT.model.Molecule_representation.models.geomol_mpnn import GeomolMLP
+from Molecule_representation.commons.mol_encoder import AtomEncoder, BondEncoder
+from Molecule_representation.models.geomol_mpnn import GeomolMLP
 
 EPS = 1e-5
 import numpy as np
-from RetroT.model.Molecule_representation.models.base_layers import MLP, MLPReadout
+from Molecule_representation.models.base_layers import MLP, MLPReadout
 
 """
     code from:
