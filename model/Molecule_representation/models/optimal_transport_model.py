@@ -5,22 +5,22 @@ from torch.nn import TransformerEncoderLayer
 from torch_geometric.nn import global_add_pool
 from torch_scatter import scatter
 
-from RetroT.model.Molecule_representation.commons.geomol_utils import *
+from Molecule_representation.commons.geomol_utils import *
 
 from itertools import permutations
 import numpy as np
 import ot
 
-from RetroT.model.Molecule_representation.models.base_layers import MLP
-from RetroT.model.Molecule_representation.models.geomol_mpnn_ogb_feat_random_non_shared import GeomolGNNOGBFeatRandomNonShared
-from RetroT.model.Molecule_representation.models.gin_random import GNN_node_VirtualnodeRandom
-from RetroT.model.Molecule_representation.models.pna_gnn_random import PNAGNNRandom
-from RetroT.model.Molecule_representation.models.geomol_mpnn import GeomolGNN, GeomolMLP
-from RetroT.model.Molecule_representation.models.geomol_mpnn_ogb_feat import GeomolGNNOGBFeat
-from RetroT.model.Molecule_representation.models.geomol_mpnn_ogb_feat_random import GeomolGNNOGBFeatRandom
-from RetroT.model.Molecule_representation.models.pna_original_random import PNAGNNSimpleRandom
-from RetroT.model.Molecule_representation.models.gin_random import GNN_nodeRandom
-from RetroT.model.Molecule_representation.models.pna_edge_update_random import PNAGNNRandomEdgeUpdate
+from Molecule_representation.models.base_layers import MLP
+from Molecule_representation.models.geomol_mpnn_ogb_feat_random_non_shared import GeomolGNNOGBFeatRandomNonShared
+from Molecule_representation.models.gin_random import GNN_node_VirtualnodeRandom
+from Molecule_representation.models.pna_gnn_random import PNAGNNRandom
+from Molecule_representation.models.geomol_mpnn import GeomolGNN, GeomolMLP
+from Molecule_representation.models.geomol_mpnn_ogb_feat import GeomolGNNOGBFeat
+from Molecule_representation.models.geomol_mpnn_ogb_feat_random import GeomolGNNOGBFeatRandom
+from Molecule_representation.models.pna_original_random import PNAGNNSimpleRandom
+from Molecule_representation.models.gin_random import GNN_nodeRandom
+from Molecule_representation.models.pna_edge_update_random import PNAGNNRandomEdgeUpdate
 
 
 
