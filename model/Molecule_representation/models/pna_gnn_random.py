@@ -5,9 +5,9 @@ import torch
 
 from torch import nn
 
-from RetroT.model.Molecule_representation.commons.mol_encoder import AtomEncoder, BondEncoder
-from RetroT.model.Molecule_representation.models.base_layers import MLP
-from RetroT.model.Molecule_representation.models.pna import PNALayer
+from Molecule_representation.commons.mol_encoder import AtomEncoder, BondEncoder
+from Molecule_representation.models.base_layers import MLP
+from Molecule_representation.models.pna import PNALayer
 
 
 class PNARandom(nn.Module):
