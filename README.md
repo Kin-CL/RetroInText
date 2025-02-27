@@ -48,7 +48,7 @@ python get_reaction_cost.py
 # Get the total_cost.
 python get_cost.py
 ```
-We also provide the dataset in the following link: [https://zenodo.org/records/14915301](https://zenodo.org/records/14915301).
+We also provide the dataset in the following link: [https://zenodo.org/records/14915301](https://zenodo.org/records/14934820), you can email the corresponding author for dataset.
 
 ## Model Training
 ### Fine tune MolT5 
